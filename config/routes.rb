@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  # old root
   
-  #get 'home/index'
-  
-  # new root added
+  get 'future/index', to: 'future#index'
+  get 'past/index', to: 'past#index'
   
   root 'home#index'
   

@@ -1,3 +1,4 @@
+@import "bootstrap/scss/bootstrap";
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,33 @@
  *= require_tree .
  *= require_self
  */
+ body{
+    font-family: 'Catamaran', sans-serif;
+    background-color: #fdfdc3;
+}
+
+h1{
+  font-size: 4.2rem;
+  text-align: center;
+}
+
+.nav-link{
+  font-size: 1.5rem;
+}
+
+#buttoncol{
+  text-align: center;
+}
+
+button{
+  background-color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  color: black;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
