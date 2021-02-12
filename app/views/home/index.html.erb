@@ -1,7 +1,19 @@
   <div class="row">
     <div class="col p-5 m-5">
-      <h1 class="mt-5 pt-5">Welcome to the Present</h1>
-      <%= link_to 'Future', home_future_path, class: "btn btn-primary" %>
-      <%= link_to 'Past', home_past_path, class: "btn btn-primary" %>
+      <div class="bg-secondary text-white mb-3 pb-4">
+        <h1 class="mt-5 p-5">Welcome to the Present</h1>
+        <div class="d-flex justify-content-center mb-3">
+          <%= link_to 'Random Quote About Present', root_path, class: "btn btn-primary"%>
+        </div>
+        <blockquote class="blockquote text-center">
+          <p><%= @result %></p>
+        </blockquote>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-around">
+          <%= link_to 'Future', home_future_path, class: "btn btn-primary" %>
+          <%= link_to 'Past', home_past_path, class: "btn btn-primary" %>
+        </div>
+      </div>
     </div>
   </div>
