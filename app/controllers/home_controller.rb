@@ -4,8 +4,8 @@ class HomeController < ApplicationController
               "The present changes the past.", 
               "No one saves us but ourselves in this moment.", 
               "This time you have, cherish it, it may never come back."]
-    num = (0..3).to_a.shuffle.first
-    @result = present[num]
+    @num = (0..3).to_a.shuffle.first
+    @result = present[@num]
   end
   
   def past
@@ -13,8 +13,8 @@ class HomeController < ApplicationController
               "The past is never where you think you left it.", 
               "Scars have the strange power to remind us that our past is real.", 
               "The past beats inside me like a second heart."]
-    num = (0..3).to_a.shuffle.first
-    @result = past[num]
+    @num = (0..3).to_a.shuffle.first
+    @result = past[@num]
   end
   
   def future
@@ -22,7 +22,7 @@ class HomeController < ApplicationController
               "The future belongs to those who believe in the beauty of their dreams.", 
               "The secret of your future is hidden in your daily routine.", 
               "Destiny is no matter of chance."]
-    num = (0..3).to_a.shuffle.first
-    @result = future[num]
+    @num = (0..3).to_a.shuffle.first
+    @result = future[@num]
   end
 end

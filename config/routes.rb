@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
-  get 'home/future'
-  get 'home/past'
+  get '/future' => 'home#future'
+  get '/past' => 'home#past'
   
   root 'home#index'
   
