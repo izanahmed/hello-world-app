@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Quote.create(desc: "The way to get started is to quit talking and begin doing.")
+Quote.create(desc: "If life were predictable it would cease to be life, and be without flavor.")
+Quote.create(desc: "Life is what happens when you're busy making other plans.")
+Quote.create(desc: "The greatest glory in living lies not in never falling, but in rising every time we fall.")
