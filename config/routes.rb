@@ -3,7 +3,12 @@ Rails.application.routes.draw do
   get '/future' => 'home#future'
   get '/past' => 'home#past'
   
-  get '/quotes' => 'quotes#allquotes'
+  get '/allquotes' => 'allquotes#manyquotes'
+  
+  
+  get '/addquote' => 'addquote#new'
+  
+  post 'addquote' => 'addquote#create'
   
   root 'home#index'
   
