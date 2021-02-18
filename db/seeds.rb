@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Quote.delete_all
 
 Quote.create(name: "Past", desc: "The way to get started is to quit talking and begin doing.")
 Quote.create(name: "Present", desc: "If life were predictable it would cease to be life, and be without flavor.")

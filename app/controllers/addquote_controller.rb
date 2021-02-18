@@ -5,7 +5,7 @@ class AddquoteController < ApplicationController
   
   def create
     @quote = Quote.create(quote_params)
-    redirect_to allquotes_path(@quote)
+    redirect_to allquotes_path
   end
   
   private

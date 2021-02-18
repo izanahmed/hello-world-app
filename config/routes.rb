@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   
   get '/addquote' => 'addquote#new'
   
-  post 'addquote' => 'addquote#create'
+  post '/addquote' => 'addquote#create'
   
   root 'home#index'
   
